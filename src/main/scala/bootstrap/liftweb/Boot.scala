@@ -63,8 +63,8 @@ class Boot extends Loggable {
 
       // more complex because this menu allows anything in the
       // /static path to be visible
-      Menu(Loc("Static", Link(List("static"), true, "/static/index"),
-        "Static Content")))
+      Menu(Loc("Bootstrap examples", Link(List("static"), true, "/static/index"),
+        "Bootstrap examples")))
 
     //def sitemapMutators = User.sitemapMutator
 
