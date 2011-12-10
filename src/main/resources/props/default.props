@@ -1,0 +1,20 @@
+##any db drop and create data true/false
+db.schemify=true
+
+##h2 db setup
+h2.db.driver=org.h2.Driver
+h2.db.url=jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;LOCK_TIMEOUT=3000
+h2.db.user=test
+h2.db.pass=test
+
+##mysql db setup
+mysql.db.driver=com.mysql.jdbc.Driver
+mysql.db.url=jdbc:mysql://localhost:3306/testXYZDB
+mysql.db.user=test
+mysql.db.pass=test
+
+##postgres db setup
+postgres.db.driver=org.postgresql.Driver
+postgres.db.url=jdbc:postgresql://localhost:5432/testXYZDB
+postgres.db.user=test
+postgres.db.pass=test
