@@ -1,15 +1,7 @@
-SEO Friendly Menu Params
-========================
+Templating With Twitter Bootstrap
+=================================
 
-This Scala/Lift basic assembly example project demonstrates Lift's menu param:s (menu.param/menu.params) usage combined with "SEO" (search engine optimization) -friendly url:s.
-There are two examples, the "ParamTest" menu entry point contains a "bare-bone" menu.param/menu.params usage example wile the "Countries" menu entry point also utilizes "Search Engine Optimization" -friendly url:s.
-To make things easy to follow the examples has extensive logging. 
-
-This _unofficial*_ example is intended for those of you who need some compact and concise running and mostly ;) simple to follow example of a particular 
-feature or concept in Lift.
-
-After many years of Java EE development I started look at Scala/Lift in May 2011 so there may be some none "best practice" stuff in there 
-and if you find something you think could be done in a more Scala/Lift fashion please let me know.
+**This is work in progress!** Check back later for a better experience. 
 
 Improvements and suggestions are welcome!
 
@@ -22,8 +14,8 @@ You don't need to use it but the project also includes a Eclipse plug-in for bro
 
 1) Get the examples
 
-	git clone git@github.com:karma4u101/SEO-Friendly-Menu-Params.git
-	cd SEO-Friendly-Menu-Params
+	git clone git@github.com:karma4u101/Templating-With-Twitter-Bootstrap.git
+	cd Templating-With-Twitter-Bootstrap
 
 2) Update & Run Jetty
 
