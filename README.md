@@ -9,7 +9,7 @@ The intention of this example is to show some of Lifts templating features in co
 
 One of Lift's many great features is it's clean and flexible templating system. For convenience and to give some styling 
 to Lift and it's templates Lift comes by default, at this writing, bundled with [blueprint](http://blueprintcss.org/) as hooked 
-up CSS framework here you will see blueprint replaced by another very popular and feature rich toolkit. 
+up CSS framework, here you will see blueprint replaced by another very popular and feature rich toolkit. 
 
 Improvements, contributions and suggestions are welcome!
 
