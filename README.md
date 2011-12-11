@@ -3,7 +3,14 @@ Templating With Twitter Bootstrap
 
 **This is work in progress!** Check back later for a better experience. 
 
-Improvements and suggestions are welcome!
+The intention of this example is to show some of Lifts templating features in conjunction with the front-end toolkit 
+[Twitter Bootstrap](http://twitter.github.com/bootstrap/).    
+
+One of lifts many great features is its clean and flexible templating system. For convenience and to give some styling 
+to Lift and it's templates Lift comes by default, at this writing, bundled with [blueprint](http://blueprintcss.org/) as hooked 
+up CSS framework here you will see blueprint replaced by another very popular toolkit. 
+
+Improvements, contributions and suggestions are welcome!
 
 best regards Peter Petersson 
 
