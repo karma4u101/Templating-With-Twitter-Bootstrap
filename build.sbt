@@ -14,6 +14,10 @@ seq(webSettings :_*)
 
 logLevel := Level.Info
 
+EclipseKeys.withSource := true
+
+transitiveClassifiers := Seq("sources")
+
 resolvers += "Java.net Maven2 Repository" at "http://download.java.net/maven/2/"
 
 libraryDependencies ++= {

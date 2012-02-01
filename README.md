@@ -46,7 +46,7 @@ Sbteclipse provides SBT command to create Eclipse project files
 1) Usage
 
 	project$ ./sbt
-	> eclipse create-src
+	> eclipse 
 
 2) In eclipse do: 
 
