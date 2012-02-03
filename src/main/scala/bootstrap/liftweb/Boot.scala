@@ -24,6 +24,8 @@ class Boot extends Loggable {
     // where to search snippet
     LiftRules.addToPackages("code")
 
+    net.liftmodules.FoBo.FoBo.init()
+    
     /*un-comment and switch to db of your liking */
     MySchemaHelper.initSquerylRecordWithInMemoryDB
     //MySchemaHelper.initSquerylRecordWithMySqlDB

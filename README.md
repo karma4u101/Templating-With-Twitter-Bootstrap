@@ -3,10 +3,11 @@ Templating With Twitter Bootstrap
 
 **This is work in progress!** You can take a peek at it right now but i suggest you also check back later for a better experience. 
  
+This example is now using my [FoBo Lift Module](https://github.com/karma4u101/FoBo) 
 
 The intention of this example is to show some of Lifts templating features in conjunction with the front-end toolkit 
-[Twitter Bootstrap](http://twitter.github.com/bootstrap/).    
-
+[Twitter Bootstrap](http://twitter.github.com/bootstrap/). 
+  
 One of Lift's many great features is it's clean and flexible templating system. For convenience and to give some styling 
 to Lift and it's templates Lift comes by default, at this writing, bundled with [blueprint](http://blueprintcss.org/) as hooked 
 up CSS framework, here you will see blueprint replaced by another very popular and feature rich toolkit. 
