@@ -3,7 +3,7 @@ Templating With Twitter Bootstrap
 
 **This is work in progress!** You can take a peek at it right now but i suggest you also check back later for a better experience. 
  
-This example is now using my [FoBo Lift Module](https://github.com/karma4u101/FoBo) 
+This example is now using the [FoBo - Lift Front-End Toolkit Module](https://github.com/karma4u101/FoBo) 
 
 The intention of this example is to show some of Lifts templating features in conjunction with the front-end toolkit 
 [Twitter Bootstrap](http://twitter.github.com/bootstrap/). 
