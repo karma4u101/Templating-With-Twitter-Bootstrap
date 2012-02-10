@@ -10,6 +10,7 @@ import sitemap._
 import Loc._
 import mapper._
 import net.liftweb.squerylrecord.RecordTypeMode._
+import net.liftmodules.FoBo._
 
 import code.model._
 import code.snippet._
@@ -24,7 +25,9 @@ class Boot extends Loggable {
     // where to search snippet
     LiftRules.addToPackages("code")
 
-    net.liftmodules.FoBo.FoBo.init()
+    FoBoInitParams.JQuery=JQuery171  
+    FoBoInitParams.ToolKit=Bootstrap140
+    FoBo.init()
     
     /*un-comment and switch to db of your liking */
     MySchemaHelper.initSquerylRecordWithInMemoryDB
