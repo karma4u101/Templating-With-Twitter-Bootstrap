@@ -1,9 +1,8 @@
 Templating With Twitter Bootstrap
 =================================
-
-**This is work in progress!** You can take a peek at it right now but i suggest you also check back later for a better experience. 
  
-This example is now using the [FoBo - Lift Front-End Toolkit Module](https://github.com/karma4u101/FoBo) 
+This lift template example is using the [FoBo - Lift Front-End Toolkit Module](https://github.com/karma4u101/FoBo) with 
+the Bootstrap002 option enabled in boot.
 
 The intention of this example is to show some of Lifts templating features in conjunction with the front-end toolkit 
 [Twitter Bootstrap](http://twitter.github.com/bootstrap/). 
@@ -18,7 +17,7 @@ best regards Peter Petersson
 
 Quick Start
 -----------
-The only prerequisites for running this Lift example is that you have Git and Java installed and configured on the target computer.
+The only prerequisites for running this Lift example is that you have the FoBo module set up, Git and Java installed and configured on the target computer.
 You don't need to use it but the project also includes a Eclipse plug-in for browsing and following/working with the code, see the Scala IDE section.   
 
 1) Get the examples

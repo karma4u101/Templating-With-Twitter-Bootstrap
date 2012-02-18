@@ -55,7 +55,7 @@
         border-left: 1px solid #eee;
       }
 
-      .topbar .btn {
+      .navbar .btn {
         border: 0;
       }
 
@@ -107,9 +107,9 @@
   /* ]]> */
   </style>
   </head>
-  <body>
+  <body data-offset="40" data-target="#fobo-navbar" data-spy="scroll">
   
-  <span class='lift:embed?what=_embededTopToolbar'>Embed the top toolbar here.</span>
+  <span class='lift:embed?what=_embededTopNavbar'>Embed the top toolbar here.</span>
   
     <div class="container">
     
@@ -131,5 +131,8 @@
       </div>
       <span class='lift:embed?what=_embededFooter'>Embed the footer here.</span>   
    </div>
+    <script type="text/javascript" src="/classpath/fobo/bootstrap-scrollspy.js"></script>
+    <script type="text/javascript" src="/classpath/fobo/bootstrap-dropdown.js"></script> 
+    <script type="text/javascript" src="/classpath/fobo/bootstrap-collapse.js"></script>       
   </body>
 </html>

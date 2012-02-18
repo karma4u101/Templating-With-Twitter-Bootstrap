@@ -26,7 +26,7 @@ class Boot extends Loggable {
     LiftRules.addToPackages("code")
 
     FoBoInitParams.JQuery=JQuery171  
-    FoBoInitParams.ToolKit=Bootstrap140
+    FoBoInitParams.ToolKit=Bootstrap200
     FoBo.init()
     
     /*un-comment and switch to db of your liking */
@@ -68,8 +68,8 @@ class Boot extends Loggable {
 
       // more complex because this menu allows anything in the
       // /static path to be visible
-      Menu(Loc("Bootstrap examples", Link(List("static"), true, "/static/index"),
-        "Bootstrap examples")))
+      Menu(Loc("Bootstrap", Link(List("bootstrap"), true, "/bootstrap/index"),
+        "Bootstrap")))
 
     //def sitemapMutators = User.sitemapMutator
 
