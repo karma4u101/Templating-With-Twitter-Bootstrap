@@ -28,7 +28,7 @@ libraryDependencies ++= {
     "net.liftweb" %% "lift-squeryl-record" % liftVersion % "compile->default",
     "net.liftweb" %% "lift-wizard" % liftVersion % "compile->default",
     "net.liftweb" %% "lift-testkit" % liftVersion % "compile->default",
-    "net.liftmodules" %% "fobo" % (liftVersion+"-0.2.8-SNAPSHOT")
+    "net.liftmodules" %% "fobo" % (liftVersion+"-0.2.9-SNAPSHOT")
     )
 }
 
