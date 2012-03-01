@@ -3,7 +3,7 @@ organization := "Lift"
 
 name := "Templating With Twitter Bootstrap"
 
-version := "0.3-SNAPSHOT"
+version := "0.4-SNAPSHOT"
 
 scalaVersion := "2.9.1"
 
@@ -28,7 +28,7 @@ libraryDependencies ++= {
     "net.liftweb" %% "lift-squeryl-record" % liftVersion % "compile->default",
     "net.liftweb" %% "lift-wizard" % liftVersion % "compile->default",
     "net.liftweb" %% "lift-testkit" % liftVersion % "compile->default",
-    "net.liftmodules" %% "fobo" % (liftVersion+"-0.2.9-SNAPSHOT")
+    "net.liftmodules" %% "fobo" % (liftVersion+"-0.3.4-SNAPSHOT")
     )
 }
 
