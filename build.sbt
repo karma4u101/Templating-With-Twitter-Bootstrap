@@ -28,7 +28,7 @@ libraryDependencies ++= {
     "net.liftweb" %% "lift-squeryl-record" % liftVersion % "compile->default",
     "net.liftweb" %% "lift-wizard" % liftVersion % "compile->default",
     "net.liftweb" %% "lift-testkit" % liftVersion % "compile->default",
-    "net.liftmodules" %% "fobo" % (liftVersion+"-0.3.4-SNAPSHOT")
+    "net.liftmodules" %% "fobo" % (liftVersion+"-0.3.5-SNAPSHOT") withSources()
     )
 }
 
@@ -43,3 +43,11 @@ libraryDependencies ++= Seq(
   "org.scala-tools.testing" %% "specs" % "1.6.9" % "test",
   "org.specs2" %% "specs2" % "1.6.1" % "test"
 )
+
+//seq(lessSettings:_*)
+
+//(sourceDirectory in (Compile, LessKeys.less)) <<= (sourceDirectory in Compile)(_ / "resources" / "toserve" / "less" / "bootstrap" / "2.0.0")
+
+//(resourceManaged in (Compile, LessKeys.less)) <<= (crossTarget in Compile)(_ / "classes" / "toserve" / "fobo" / "bootstrap" / "2.0.0" / "css" )
+
+//(LessKeys.filter in (Compile, LessKeys.less)) := "bootstrap.less"
