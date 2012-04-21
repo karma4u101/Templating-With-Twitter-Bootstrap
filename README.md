@@ -20,18 +20,22 @@ Quick Start
 The only prerequisites for running this Lift example is that you have the FoBo module set up, Git and Java installed and configured on the target computer.
 You don't need to use it but the project also includes a Eclipse plug-in for browsing and following/working with the code, see the Scala IDE section.   
 
-1) Get the examples
+1) Get the FoBo module
+
+If you have not fetched it already follow the instructions at [FoBo - Lift Front-End Toolkit Module](https://github.com/karma4u101/FoBo). Basically this step involves a one liner command for local publish of the FoBo module.  
+
+2) Get the examples
 
 	git clone git@github.com:karma4u101/Templating-With-Twitter-Bootstrap.git
 	cd Templating-With-Twitter-Bootstrap
 
-2) Update & Run Jetty
+3) Update & Run Jetty
 
 There is also a sbt.bat for windows users.
 
 	./sbt update ~container:start
 
-3) Launch Your Browser
+4) Launch Your Browser
 	
 	http://localhost:8080/
 
