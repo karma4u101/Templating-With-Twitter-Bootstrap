@@ -7,6 +7,23 @@
 :: Page Name 2
 */
 
+body {
+    padding-top: 60px; /* 40px to make the container go all the way to the bottom of the topbar */
+}
+      
+@media (min-width: 768px) and (max-width: 979px) {
+	body {padding-top: 0px;}
+}
+@media (max-width: 480px) {
+	body {padding-top: 0px;}
+}
+@media (max-width: 767px) {
+	body {padding-top: 0px;}
+}
+@media (min-width: 1200px) {}
+@media (max-width: 979px) {}
+
+
 .navbar .brand:hover {
     text-decoration: none;
 }

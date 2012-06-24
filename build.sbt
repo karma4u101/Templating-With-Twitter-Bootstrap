@@ -20,6 +20,8 @@ transitiveClassifiers := Seq("sources")
 
 resolvers += "Java.net Maven2 Repository" at "http://download.java.net/maven/2/"
 
+//"net.liftmodules" %% "fobo" % (liftVersion+"-0.4.1-SNAPSHOT") withSources()
+
 libraryDependencies ++= {
   val liftVersion = "2.4" // Put the current/latest lift version here
   Seq(
@@ -28,7 +30,7 @@ libraryDependencies ++= {
     "net.liftweb" %% "lift-squeryl-record" % liftVersion % "compile->default",
     "net.liftweb" %% "lift-wizard" % liftVersion % "compile->default",
     "net.liftweb" %% "lift-testkit" % liftVersion % "compile->default",
-    "net.liftmodules" %% "fobo" % (liftVersion+"-0.4.1-SNAPSHOT") withSources()
+    "net.liftmodules" %% "fobo" % (liftVersion+"-0.5.0-SNAPSHOT") withSources()
     )
 }
 
