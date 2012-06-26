@@ -26,6 +26,9 @@ class Boot extends Loggable {
     // where to search snippet
     LiftRules.addToPackages("code")
     
+    //If you like to test the JQueryModule un-comment it and comment out the FoBo init param for JQuery. 
+    //also switch the script tag settings in default.html
+    //net.liftmodules.JQueryModule.init()
     FoBo.InitParam.JQuery=FoBo.JQuery171  
     FoBo.InitParam.ToolKit=FoBo.Bootstrap204
     FoBo.InitParam.ToolKit=FoBo.PrettifyJun2011
