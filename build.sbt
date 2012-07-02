@@ -21,9 +21,10 @@ transitiveClassifiers := Seq("sources")
 resolvers ++= Seq(
   "Scala Tools Releases" at "http://scala-tools.org/repo-releases/",
   "Scala Tools Snapshot" at "http://scala-tools.org/repo-snapshots/",
-  "Java.net Maven2 Repository" at "http://download.java.net/maven/2/",
-  "Media4u101 SNAPSHOT Repository" at "http://www.media4u101.se:8081/nexus/content/repositories/snapshots/"
+  "Java.net Maven2 Repository" at "http://download.java.net/maven/2/"
 )
+
+//"Media4u101 SNAPSHOT Repository" at "http://www.media4u101.se:8081/nexus/content/repositories/snapshots/"
 
 libraryDependencies ++= {
   val liftVersion = "2.4" // Put the current/latest lift version here
@@ -33,7 +34,7 @@ libraryDependencies ++= {
     "net.liftweb" %% "lift-squeryl-record" % liftVersion % "compile->default",
     "net.liftweb" %% "lift-wizard" % liftVersion % "compile->default",
     "net.liftweb" %% "lift-testkit" % liftVersion % "compile->default",
-    "net.liftmodules" %% "lift-jquery-module" % (liftVersion+"-0.0.2-SNAPSHOT") withSources(),
+    "net.liftmodules" %% "lift-jquery-module" % (liftVersion+"-0.0.4-SNAPSHOT") withSources(),
     "net.liftmodules" %% "fobo" % (liftVersion+"-0.5.0-SNAPSHOT") withSources()
     )
 }

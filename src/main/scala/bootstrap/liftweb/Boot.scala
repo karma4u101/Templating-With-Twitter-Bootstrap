@@ -26,8 +26,8 @@ class Boot extends Loggable {
     // where to search snippet
     LiftRules.addToPackages("code")
     
-    net.liftmodules.JQueryModule.init()
-    //FoBo.InitParam.JQuery=FoBo.JQuery171  
+    //net.liftmodules.JQueryModule.init()
+    FoBo.InitParam.JQuery=FoBo.JQuery171  
     FoBo.InitParam.ToolKit=FoBo.Bootstrap204
     FoBo.InitParam.ToolKit=FoBo.PrettifyJun2011
     FoBo.init()
@@ -98,6 +98,7 @@ class Boot extends Loggable {
     LiftRules.htmlProperties.default.set((r: Req) =>
       new Html5Properties(r.userAgent))
 
+   
     // Make a transaction span the whole HTTP request
     S.addAround(new LoanWrapper {
       override def apply[T](f: => T): T =
