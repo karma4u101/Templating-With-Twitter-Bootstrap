@@ -1,131 +1,68 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:lift="http://liftweb.net/">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <title class="lift:Menu.title">App: </title>
-    <!-- Le styles -->
-    <link href="/classpath/fobo/bootstrap.css" rel="stylesheet"/>
-    <link href="/classpath/fobo/bootstrap-responsive.css" rel="stylesheet"/>
-    <link href="/css/app.css" rel="stylesheet"/>
-    
-    <!-- <script id="jquery" src="/classpath/jquery.js" type="text/javascript"></script> --> 
-    <script id="jquery" src="/classpath/fobo/jquery.js" type="text/javascript"></script>  
-    <script id="json" src="/classpath/json.js" type="text/javascript"></script>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:lift="http://liftweb.net/">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<title class="lift:Menu.title">App:</title>
+<!-- Le styles -->
+<link href="/classpath/fobo/bootstrap.css" rel="stylesheet" />
+<link href="/classpath/fobo/bootstrap-responsive.css" rel="stylesheet" />
+<link href="/css/app.css" rel="stylesheet" />
+
+<script id="jquery" src="/classpath/jquery.js" type="text/javascript"></script>
+<!--<script id="jquery" src="/classpath/fobo/jquery.js" type="text/javascript"></script>-->
+<script id="json" src="/classpath/json.js" type="text/javascript"></script>
 
 <style type="text/css">
 /* <![CDATA[ */
 .edit_error_class {
-  display: block;
-  color: red;
+	display: block;
+	color: red;
 }
 
 .sidebar ul {
-	margin:0;
-	padding:0;
-	border-bottom:1px solid #ccc;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #ccc;
 }
-	 
+
 .sidebar ul li {
-	margin:0;
-	padding:0;
-	list-style:none;
-	border:1px solid #ccc;
-	border-bottom:none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 1px solid #ccc;
+	border-bottom: none;
 }
 
 .sidebar ul li a {
-	display:block;
-	padding:3px;
-	text-indent:30px;
-	text-decoration:none;
+	display: block;
+	padding: 3px;
+	text-indent: 30px;
+	text-decoration: none;
 }
 
 .sidebar ul li span {
-	display:block;
-	padding:3px;
-	text-indent:30px;
-	text-decoration:none;
+	display: block;
+	padding: 3px;
+	text-indent: 30px;
+	text-decoration: none;
 }
 
 .sidebar ul li a:hover {
 	background-color: #eee;
 }
 
+/* ]]> */
+</style>
+</head>
+<body data-offset="40" data-target="#fobo-navbar" data-spy="scroll">
 
-  /* ]]> */
-  </style>
-  </head>
-  <body data-offset="40" data-target="#fobo-navbar" data-spy="scroll">
-  
-  <span class='lift:embed?what=_embededTopNavbar'>Embed the top toolbar here.</span>
-   
-  <div class="container-fluid">
-      <div class="row-fluid">
+	<span class='lift:embed?what=_embededTopNavbar'>Embed the top
+		toolbar here.</span>
 
-        <div class="span9">
-          <div class="hero-unit">
-            <h1>FoBo Bootstrap Lift Template!</h1>
-            <p>This basic Bootstrap Lift Template uses the <strong>fluid grid layout</strong> so resize the page or open the it in your favorite media device. 
-            For more information about FoBo take a look att <a href="http://www.media4u101.se/fobo-lift-template-demo/">FoBo - A Generic Lift Front-End Toolkit Module</a>.</p>
-            <p>
-            <span data-lift="Menu.item?name=Bootstrap;a:class=btn btn-primary btn-large"><span data-lift="Loc.i">LearnMore</span></span></p>
-          </div>
-          <div class="row-fluid">
-            <div class="span12">
-           <h2>Main content</h2>
-            <div id="content">The main content will get bound here</div>
-            </div>
-          </div>
-          <div class="row-fluid">
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a href="#" class="btn">View details »</a></p>
-            </div>
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a href="#" class="btn">View details »</a></p>
-            </div>
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a href="#" class="btn">View details »</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>              
-              <li>
-                <span data-lift="Menu.item?name=Home;linkToSelf=true;">
-                 <i class="icon-home icon"></i><span data-lift="Loc.i">Home</span> 
-                 </span>
-               </li>
-              <li>
-                <span data-lift="Menu.item?name=Bootstrap;"><i class="icon-book icon"></i><span data-lift="Loc.i">Documentation</span>
-                </span>
-              </li>
-              <li>
-                <span data-lift="Menu.item?name=Countries;lift:Loc.i;">Countries</span>
-              </li>
-              <li>
-                <span data-lift="Menu.item?name=ParamTest;lift:Loc.i;">ParamTest</span>
-              </li>
+	<div id="content">The main content will get bound here</div>
 
-            </ul>
-          </div>
-          <div class="lift:Msgs?showAll=true"></div>
-          
-        </div>        
-      </div>
-
-      <hr>
-      <span class='lift:embed?what=_embededFooter'>Embed the footer here.</span>    
-    </div>
-   
-    <script type="text/javascript" src="/classpath/fobo/bootstrap.js"></script>  
-  </body>
+	<script type="text/javascript" src="/classpath/fobo/bootstrap.js"></script>
+</body>
 </html>

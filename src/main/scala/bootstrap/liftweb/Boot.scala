@@ -14,7 +14,7 @@ import net.liftweb.squerylrecord.RecordTypeMode._
 import code.model._
 import code.snippet._
 
-import net.liftmodules.FoBo
+import net.liftmodules.{FoBo,JQueryModule}
 
 /**
  * A class that's instantiated early and run.  It allows the application
@@ -26,12 +26,17 @@ class Boot extends Loggable {
     // where to search snippet
     LiftRules.addToPackages("code")
     
-    //net.liftmodules.JQueryModule.init()
-    FoBo.InitParam.JQuery=FoBo.JQuery171  
+    //We skip the FoBo built in JQuery in favor for the FoBo included lift-jquery-module
+    //FoBo.InitParam.JQuery=FoBo.JQuery171  
     FoBo.InitParam.ToolKit=FoBo.Bootstrap204
     FoBo.InitParam.ToolKit=FoBo.PrettifyJun2011
     FoBo.init()
-    
+    //Setup the FoBo included JQuery module. 
+    //We are using the default version so we don't need 
+    //to specify the version explicitly, but this is how it is set. 
+    //JQueryModule.InitParam.JQuery=JQueryModule.JQuery172
+    JQueryModule.init()    
+ 
     /*un-comment and switch to db of your liking */
     MySchemaHelper.initSquerylRecordWithInMemoryDB
     //MySchemaHelper.initSquerylRecordWithMySqlDB

@@ -1,18 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
-    <title>Home</title>
-  </head>
-  <body class="lift:content_id=main">
-    <div id="main" class="lift:surround?with=default;at=content">
-      <h2>Welcome to your project!</h2>
-      <p>
-	<span class="lift:helloWorld.howdy">
-	  Welcome to your Lift app at <span id="time">Time goes here</span>
-	</span>
-      </p>
-    </div>
-  </body>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>Home</title>
+</head>
+<body class="lift:content_id=main">
+	<div id="main" class="lift:surround?with=default;at=content">
+
+		<div class="container-fluid">
+			<div class="row-fluid">
+
+				<div class="span9">
+
+                    <!-- we should make this hero unit a include -->
+					<div class="hero-unit">
+						<h1>FoBo Bootstrap Lift Template!</h1>
+						<p>
+							This basic Bootstrap Lift Template uses the <strong>fluid
+								grid layout</strong> so resize the page or open the it in your favorite
+							media device. For more information about FoBo take a look at <a
+								href="http://www.media4u101.se/fobo-lift-template-demo/">FoBo
+								- A Generic Lift Front-End Toolkit Module</a>.
+						</p>
+						<p>
+							<span
+								data-lift="Menu.item?name=Bootstrap;a:class=btn btn-primary btn-large"><span
+								data-lift="Loc.i">LearnMore</span></span>
+						</p>
+					</div>
+
+                    <!-- this could be a include -->
+					<div class="row-fluid">
+						<div class="span12">
+							<!-- <h2>Main content</h2>  -->
+							<h2>Welcome to your Lift project!</h2>
+							<p>
+								<span class="lift:helloWorld.howdy"> Welcome to your Lift
+									app at <span id="time">Time goes here</span>
+								</span>
+							</p>
+						</div>
+					</div>
+
+                    <!-- this could be a include 2 -->
+					<div class="row-fluid">
+						<div class="span4">
+							<h2>Heading</h2>
+							<p>Donec id elit non mi porta gravida at eget metus. Fusce
+								dapibus, tellus ac cursus commodo, tortor mauris condimentum
+								nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+								malesuada magna mollis euismod. Donec sed odio dui.</p>
+							<p>
+								<a href="#" class="btn">View details »</a>
+							</p>
+						</div>
+						<div class="span4">
+							<h2>Heading</h2>
+							<p>Donec id elit non mi porta gravida at eget metus. Fusce
+								dapibus, tellus ac cursus commodo, tortor mauris condimentum
+								nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+								malesuada magna mollis euismod. Donec sed odio dui.</p>
+							<p>
+								<a href="#" class="btn">View details »</a>
+							</p>
+						</div>
+						<div class="span4">
+							<h2>Heading</h2>
+							<p>Donec id elit non mi porta gravida at eget metus. Fusce
+								dapibus, tellus ac cursus commodo, tortor mauris condimentum
+								nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+								malesuada magna mollis euismod. Donec sed odio dui.</p>
+							<p>
+								<a href="#" class="btn">View details »</a>
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+                <!-- The side column stuff could be a include two -->
+				<div class="span3">
+					<div class="well sidebar-nav">
+						<ul class="nav nav-list">
+							<li class="nav-header">Sidebar</li>
+							<li><span data-lift="Menu.item?name=Home;linkToSelf=true;">
+									<i class="icon-home icon"></i><span data-lift="Loc.i">Home</span>
+							</span></li>
+							<li><span data-lift="Menu.item?name=Bootstrap;"><i
+									class="icon-book icon"></i><span data-lift="Loc.i">Documentation</span>
+							</span></li>
+							<li><span data-lift="Menu.item?name=Countries;lift:Loc.i;">Countries</span>
+							</li>
+							<li><span data-lift="Menu.item?name=ParamTest;lift:Loc.i;">ParamTest</span>
+							</li>
+
+						</ul>
+					</div>
+					<div class="lift:Msgs?showAll=true"></div>
+				</div>
+
+			</div>
+
+			<hr>
+			<span class='lift:embed?what=_embededFooter'>Embed the footer
+				here.</span>
+		</div>
+
+
+
+
+	</div>
+</body>
 </html>
 
