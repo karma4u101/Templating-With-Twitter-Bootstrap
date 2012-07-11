@@ -23,7 +23,7 @@ resolvers ++= Seq(
   "Scala Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/",
   "Scala" at "https://oss.sonatype.org/content/groups/scala-tools/",
   "Media4u101 Repository" at "http://www.media4u101.se:8081/nexus/content/repositories/releases/",
-  "Media4u101 SNAPSHOT Repository" at "http://www.media4u101.se:8081/nexus/content/repositories/snapshot/"  
+  "Media4u101 SNAPSHOT Repository" at "http://www.media4u101.se:8081/nexus/content/repositories/snapshots/"  
 )
 
 libraryDependencies ++= {
