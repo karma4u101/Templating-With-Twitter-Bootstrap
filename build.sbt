@@ -22,7 +22,8 @@ resolvers ++= Seq(
   "Java.net Maven2 Repository" at "http://download.java.net/maven/2/",
   "Scala Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/",
   "Scala" at "https://oss.sonatype.org/content/groups/scala-tools/",
-  "Media4u101 SNAPSHOT Repository" at "http://www.media4u101.se:8081/nexus/content/repositories/releases/"  
+  "Media4u101 Repository" at "http://www.media4u101.se:8081/nexus/content/repositories/releases/",
+  "Media4u101 SNAPSHOT Repository" at "http://www.media4u101.se:8081/nexus/content/repositories/snapshot/"  
 )
 
 libraryDependencies ++= {
@@ -33,7 +34,8 @@ libraryDependencies ++= {
     "net.liftweb" %% "lift-squeryl-record" % liftVersion % "compile->default",
     "net.liftweb" %% "lift-wizard" % liftVersion % "compile->default",
     "net.liftweb" %% "lift-testkit" % liftVersion % "compile->default",
-    "net.liftmodules" %% "fobo" % (liftVersion+"-0.5") withSources()
+    "net.liftmodules" %% "lift-jquery-module" % (liftVersion+"-1.0") % "compile->default",
+    "net.liftmodules" %% "fobo" % (liftVersion+"-0.5.2-SNAPSHOT") withSources()
     )
 }
 

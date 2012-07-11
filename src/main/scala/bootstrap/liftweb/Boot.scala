@@ -34,8 +34,8 @@ class Boot extends Loggable {
     //Setup the FoBo included JQuery module. 
     //We are using the default version so we don't need 
     //to specify the version explicitly, but this is how it is set. 
-    //JQueryModule.InitParam.JQuery=JQueryModule.JQuery172
-    JQueryModule.init()    
+    JQueryModule.InitParam.JQuery=JQueryModule.JQuery172
+    JQueryModule.init() 
  
     /*un-comment and switch to db of your liking */
     MySchemaHelper.initSquerylRecordWithInMemoryDB
@@ -112,5 +112,6 @@ class Boot extends Loggable {
         }
     })
 
+    
   }
 }
