@@ -55,6 +55,55 @@
 
 /* ]]> */
 </style>
+
+<style>
+.submenu-show
+{
+    border-radius: 3px;
+    display: block;
+    left: 100%;
+    margin-top: -25px !important;
+    moz-border-radius: 3px;
+    position: absolute;
+    webkit-border-radius: 3px;
+}
+.submenu-hide
+{
+    display: none !important;
+    float: right;
+    position: relative;
+    top: auto;
+}
+.navbar .submenu-show:before
+{
+    border-bottom: 7px solid transparent;
+    border-left: none;
+    border-right: 7px solid rgba(0, 0, 0, 0.2);
+    border-top: 7px solid transparent;
+    left: -7px;
+    top: 10px;
+}
+.navbar .submenu-show:after
+{
+    border-bottom: 6px solid transparent;
+    border-left: none;
+    border-right: 6px solid #fff;
+    border-top: 6px solid transparent;
+    left: 10px;
+    left: -6px;
+    top: 11px;
+}
+</style>
+<script type='text/javascript'>//<![CDATA[
+        $(window).load(function(){
+            jQuery('.submenu').hover(function () {
+                jQuery(this).children('ul').removeClass('submenu-hide').addClass('submenu-show');
+            }, function () {
+                jQuery(this).children('ul').removeClass('.submenu-show').addClass('submenu-hide');
+            }).find("a:first").append(" &raquo; ");
+        });//]]>
+</script>
+        
 </head>
 <body data-offset="40" data-target="#fobo-navbar">
 

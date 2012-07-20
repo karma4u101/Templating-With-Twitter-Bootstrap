@@ -76,6 +76,20 @@ class Boot extends Loggable {
       Menu.i("A1") / "a1" >> Hidden >> LocGroup("bdd"),
       Menu.i("A2") / "a2" >> Hidden >> LocGroup("bdd"),
       Menu.i("A3") / "a3" >> Hidden >> LocGroup("bdd"),
+
+      Menu.i("Level 1.1.1") / "page111" >> Hidden >> LocGroup("bdd11"),
+      Menu.i("Level 1.1.2") / "page112" >> Hidden >> LocGroup("bdd11"),
+      Menu.i("Level 1.1.3") / "page113" >> Hidden >> LocGroup("bdd11"),   
+      Menu.i("Level 1.1.4") / "page114" >> Hidden >> LocGroup("bdd11"),
+      
+      Menu.i("Level 1.2.1") / "page121" >> Hidden >> LocGroup("bdd12"),
+      Menu.i("Level 1.2.2") / "page122" >> Hidden >> LocGroup("bdd12"),
+    
+      Menu.i("Level 1.3") / "page13" >> Hidden >> LocGroup("bdd1"),
+      Menu.i("Level 1.4") / "page14" >> Hidden >> LocGroup("bdd1"),   
+      Menu.i("Level 1.5") / "page15" >> Hidden >> LocGroup("bdd1"),      
+                     
+      
       // more complex because this menu allows anything in the
       // /static path to be visible
       Menu(Loc("Bootstrap", Link(List("bootstrap-2.0.4"), true, "/bootstrap-2.0.4/index"),
