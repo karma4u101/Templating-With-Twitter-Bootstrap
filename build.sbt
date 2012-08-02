@@ -41,6 +41,7 @@ libraryDependencies ++= {
 
 // Customize any further dependencies as desired
 libraryDependencies ++= Seq(
+  "org.hoisted" %% "hoisted" % "0.1-SNAPSHOT" ,
   "org.eclipse.jetty" % "jetty-webapp" % "8.0.3.v20111011" % "container",
   //"org.mortbay.jetty" % "jetty" % "6.1.22" % "container", // For Jetty 7
   "com.jolbox" % "bonecp" % "0.7.1.RELEASE" % "compile->default",

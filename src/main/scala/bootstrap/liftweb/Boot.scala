@@ -14,6 +14,9 @@ import net.liftweb.squerylrecord.RecordTypeMode._
 import code.model._
 import code.snippet._
 
+//import org.hoisted.lib._
+//import java.io._
+
 import net.liftmodules.{FoBo,JQueryModule}
 
 /**
@@ -23,6 +26,8 @@ import net.liftmodules.{FoBo,JQueryModule}
 class Boot extends Loggable {
   def boot {
 
+//    RunHoisted(new File("/usr/local/proj/cms_site"),new File("/home/peter/test"))
+    
     // where to search snippet
     LiftRules.addToPackages("code")
     
