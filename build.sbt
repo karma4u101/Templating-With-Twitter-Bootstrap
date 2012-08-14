@@ -35,7 +35,7 @@ libraryDependencies ++= {
     "net.liftweb" %% "lift-wizard" % liftVersion % "compile->default",
     "net.liftweb" %% "lift-testkit" % liftVersion % "compile->default",
     "net.liftmodules" %% "lift-jquery-module" % (liftVersion+"-1.0") % "compile->default",
-    "net.liftmodules" %% "fobo" % (liftVersion+"-0.5.2-SNAPSHOT") withSources()
+    "net.liftmodules" %% "fobo" % (liftVersion+"-0.5.4-SNAPSHOT") withSources()
     )
 }
 
