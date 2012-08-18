@@ -2,7 +2,7 @@ Templating With Twitter Bootstrap
 =================================
  
 This lift template example is using the [FoBo - Lift Front-End Toolkit Module](https://github.com/karma4u101/FoBo) with 
-the Bootstrap002 option enabled in boot.
+the Bootstrap204 option enabled in boot.
 
 The intention of this example is to show some of Lifts templating features in conjunction with the front-end toolkit 
 [Twitter Bootstrap](http://twitter.github.com/bootstrap/). 
