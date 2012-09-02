@@ -32,13 +32,11 @@ class Boot extends Loggable {
     LiftRules.addToPackages("code")
     
     //We skip the FoBo built in JQuery in favor for the FoBo included lift-jquery-module
-    //FoBo.InitParam.JQuery=FoBo.JQuery171  
-    FoBo.InitParam.ToolKit=FoBo.Bootstrap204
+    //FoBo.InitParam.JQuery=FoBo.JQuery172  
+    FoBo.InitParam.ToolKit=FoBo.Bootstrap210
     FoBo.InitParam.ToolKit=FoBo.PrettifyJun2011
     FoBo.init()
-    //Setup the FoBo included JQuery module. 
-    //We are using the default version so we don't need 
-    //to specify the version explicitly, but this is how it is set. 
+    //Just to show you do not need to use the FoBo jquery
     JQueryModule.InitParam.JQuery=JQueryModule.JQuery172
     JQueryModule.init() 
  
@@ -97,7 +95,7 @@ class Boot extends Loggable {
       
       // more complex because this menu allows anything in the
       // /static path to be visible
-      Menu(Loc("Bootstrap", Link(List("bootstrap-2.0.4"), true, "/bootstrap-2.0.4/index"),
+      Menu(Loc("Bootstrap", Link(List("bootstrap-2.1.0"), true, "/bootstrap-2.1.0/index"),
         "Bootstrap")))
 
     //def sitemapMutators = User.sitemapMutator
