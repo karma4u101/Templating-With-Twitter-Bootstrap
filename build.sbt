@@ -3,7 +3,7 @@ organization := "Lift"
 
 name := "Templating With Twitter Bootstrap"
 
-version := "0.4.2-SNAPSHOT"
+version := "0.4.3-SNAPSHOT"
 
 scalaVersion := "2.9.1"
 
@@ -35,21 +35,16 @@ libraryDependencies ++= {
     "net.liftweb"      %% "lift-wizard"          % liftVersion          % "compile->default",
     "net.liftweb"      %% "lift-testkit"         % liftVersion          % "compile->default",
     "net.liftmodules"  %% "lift-jquery-module"   % (liftVersion+"-1.0") % "compile->default",
-    "net.liftmodules"  %% "fobo"                 % (liftVersion+"-0.7.1-SNAPSHOT") withSources()
+    "net.liftmodules"  %% "fobo"                 % (liftVersion+"-0.7.2-SNAPSHOT") withSources()
     )
 }
 
 // Customize any further dependencies as desired
 libraryDependencies ++= Seq(
-//  "org.hoisted"             %% "hoisted"        % "0.1-SNAPSHOT" ,
   "org.eclipse.jetty"        % "jetty-webapp"   % "8.0.3.v20111011"  % "container",
-  //"org.mortbay.jetty"      % "jetty"          % "6.1.22"           % "container", // For Jetty 7
   "com.jolbox"               % "bonecp"         % "0.7.1.RELEASE"    % "compile->default",
   "javax.servlet"            % "servlet-api"    % "2.5"              % "provided->default",
-  "org.slf4j"                % "slf4j-log4j12"  % "1.6.1"            % "compile->default"//, // Logging
-//  "junit"                    % "junit"          % "4.8"              % "test->default", // For JUnit 4 testing
-//  "org.scala-tools.testing" %% "specs"          % "1.6.9"            % "test",
-//  "org.specs2"              %% "specs2"         % "1.6.1"            % "test"
+  "org.slf4j"                % "slf4j-log4j12"  % "1.6.1"            % "compile->default"
 )
 
 
