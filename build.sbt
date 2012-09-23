@@ -27,7 +27,7 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= {
-  val liftVersion = "2.4" // Put the current/latest lift version here
+  val liftVersion = "2.5-M1" // Put the current/latest lift version here
   Seq(
     "net.liftweb"      %% "lift-webkit"          % liftVersion          % "compile->default" withSources(),
     "net.liftweb"      %% "lift-mapper"          % liftVersion          % "compile->default",
@@ -35,7 +35,8 @@ libraryDependencies ++= {
     "net.liftweb"      %% "lift-wizard"          % liftVersion          % "compile->default",
     "net.liftweb"      %% "lift-testkit"         % liftVersion          % "compile->default",
     "net.liftmodules"  %% "lift-jquery-module"   % (liftVersion+"-1.0") % "compile->default",
-    "net.liftmodules"  %% "fobo"                 % (liftVersion+"-0.7.2-SNAPSHOT") withSources()
+    "net.liftmodules"  %% "fobo"                 % (liftVersion+"-0.7.2-SNAPSHOT") withSources(),
+    "com.h2database"    % "h2"                  % "1.3.167"
     )
 }
 
