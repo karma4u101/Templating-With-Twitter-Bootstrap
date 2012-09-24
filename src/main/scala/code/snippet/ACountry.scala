@@ -27,10 +27,10 @@ class ACountry(country: Country) extends Loggable {
   
   def m: Loc[(Country, Region)] = ARegion.menu
   def render = { 
-    "h3 *"     #> country.name &
+    "h3 *"     #> country.name.is &
     "a"        #> reList.map(r => 
     "* [href]" #>  ARegion.menu.calcHref((country, r)) &
-    "* *"      #> (r.name) )     
+    "* *"      #> (r.name.is) )
     } 
   
   logger.info("snippet.ACountry class end")
