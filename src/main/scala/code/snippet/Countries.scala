@@ -18,7 +18,7 @@ object Countries extends Loggable {
 
   def render = { "a"        #> ccList.map(
             c => "* [href]" #> ACountry.menu.calcHref(c) & 
-                 "* *" #> (c.name)               
+                 "* *" #> (c.name.is)
         )
   }
   
