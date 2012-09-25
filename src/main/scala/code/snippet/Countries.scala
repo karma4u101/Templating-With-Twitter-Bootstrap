@@ -16,9 +16,10 @@ object Countries extends Loggable {
   
   lazy val menu = Menu.i("Countries") / "countries"
 
-  def render = { "a"        #> ccList.map(
-            c => "* [href]" #> ACountry.menu.calcHref(c) & 
-                 "* *" #> (c.name.is)
+  def render = { 
+    "a"        #> ccList.map( c => 
+    "* [href]" #> ACountry.menu.calcHref(c) & 
+    "* *"      #> (c.name.get)
         )
   }
   
