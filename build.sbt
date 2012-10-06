@@ -35,8 +35,7 @@ libraryDependencies ++= {
     "net.liftweb"      %% "lift-wizard"          % liftVersion          % "compile->default",
     "net.liftweb"      %% "lift-testkit"         % liftVersion          % "compile->default",
     "net.liftmodules"  %% "lift-jquery-module"   % (liftVersion+"-1.0") % "compile->default",
-    "net.liftmodules"  %% "fobo"                 % (liftVersion+"-0.7.2-SNAPSHOT") withSources(),
-    "com.h2database"    % "h2"                  % "1.3.167"
+    "net.liftmodules"  %% "fobo"                 % (liftVersion+"-0.7.2-SNAPSHOT") withSources()
     )
 }
 
@@ -45,7 +44,8 @@ libraryDependencies ++= Seq(
   "org.eclipse.jetty"        % "jetty-webapp"   % "8.0.3.v20111011"  % "container",
   "com.jolbox"               % "bonecp"         % "0.7.1.RELEASE"    % "compile->default",
   "javax.servlet"            % "servlet-api"    % "2.5"              % "provided->default",
-  "org.slf4j"                % "slf4j-log4j12"  % "1.6.1"            % "compile->default"
+  "org.slf4j"                % "slf4j-log4j12"  % "1.6.1"            % "compile->default",
+  "com.h2database"           % "h2"             % "1.3.167"
 )
 
 
