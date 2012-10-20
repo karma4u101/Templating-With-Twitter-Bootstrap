@@ -21,9 +21,7 @@ transitiveClassifiers := Seq("sources")
 resolvers ++= Seq(
   "Sonatype snapshots"             at "http://oss.sonatype.org/content/repositories/snapshots",
   "Sonatype releases"              at "http://oss.sonatype.org/content/repositories/releases",
-  "Java.net Maven2 Repository"     at "http://download.java.net/maven/2/",
-  "Media4u101 Repository"          at "http://www.media4u101.se:8081/nexus/content/repositories/releases/",
-  "Media4u101 Snapshot Repository" at "http://www.media4u101.se:8081/nexus/content/repositories/snapshots/"
+  "Java.net Maven2 Repository"     at "http://download.java.net/maven/2/"
 )
 
 libraryDependencies ++= {
