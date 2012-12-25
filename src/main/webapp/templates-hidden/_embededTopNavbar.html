@@ -27,105 +27,14 @@
         </a>
         <a href="/" class="brand">FoBo Bootstrap</a>
         <div class="nav-collapse"> 
-          <ul class="nav">
-            <li> 
-              <a href="/#spyhome">
-<!--                 <i class="icon-home"></i>  -->
-                <span data-lift="Loc.i">Home</span>
-              </a>             
-            </li>
-<!--             <li> -->
-<!-- 			  <span data-lift="Menu.item?name=Bootstrap;lift:Loc.i;"> -->
-<!-- 		        <span data-lift="Loc.i">Bootstrap</span> -->
-<!-- 			  </span>                   -->
-<!--             </li>   -->
-            <li class="dropdown">
-              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                <span data-lift="Loc?locid=content.dropdown.text">Content</span> 
-                <b class="caret"></b>
-              </a>
+        
+          <span data-lift="FoBo.TBNavbar.builder?group=topLeft"></span>
+          <span data-lift="FoBo.TBNavbar.builderPullRight?group=topRight"></span>
 
-              <ul class="dropdown-menu">
-                 <li >
-                   <span data-lift="Menu.item?name=Home;?linkToSelf=true;a:class=addclassshowofdummy">
-<!--                      <i class="icon-home"></i>  -->
-                     <span data-lift="Loc.i">Home</span>
-                   </span>
-                 </li>
-          
-                <li class="divider"></li>
-                <li>
-			      <span data-lift="Menu.item?name=Bootstrap;lift:Loc.i;">
-				    <span data-lift="Loc.i">Bootstrap</span>
-				  </span>                  
-                 </li>                 
-              </ul>
-
-            </li>
-            
-            <!-- This menu uses lift's locgroup to show items in a nested multilevel dropdown menu -->
-            <!-- Bootstrap Multilevel Dropdown Menu level see http://jsfiddle.net/4nMkh/4/ and http://jsfprimefacesblog.blogspot.se/ -->
-            <li class="dropdown">
-              <a data-toggle="dropdown" class="dropdown-toggle active" href="#">Lift Nested menu(s) DD<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li class="dropdown submenu">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 1</a>
-                    <ul class="dropdown-menu submenu-show submenu-hide">
-                        <li class="dropdown submenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 1.1</a>
-                             <ul class="dropdown-menu submenu-show submenu-hide">
-                                    <li data-lift="Menu.group?group=bdd11"></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown submenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 1.2</a>
-                            <ul class="dropdown-menu submenu-show submenu-hide">
-                                    <li data-lift="Menu.group?group=bdd12"></li>                           
-                            </ul>
-                        </li>
-                        <li data-lift="Menu.group?group=bdd1"></li>
-                    </ul>
-                </li>
-                <li><a href="#">Other</a></li>
-              </ul>
-            </li>            
-          </ul>
-          
-          <form action="" class="navbar-search pull-left">
+          <form action="" class="navbar-search pull-right">
             <input placeholder="Search" class="search-query span2" type="text">
           </form>
-
-
-          <ul class="nav pull-right">
-
-            <!-- This menu uses lift's locgroup to show items in a one level dropdown menu -->
-            <li class="dropdown">
-              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                <span data-lift="Loc?locid=content.dropdown.SimpeLiftMenuLocgroupDemo.text">SimpeLiftMenuLocgroupDemo</span> 
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu" >
-                <li data-lift="Menu.group?group=bdd"></li>
-              </ul>
-            </li>
-
-            <li class="divider-vertical"></li>
-
-            <li class="dropdown">
-              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                <i class="icon-user "></i> 
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </li>
-          </ul>
+          
         </div>
       </div>
     </div>
