@@ -62,5 +62,5 @@ Sbteclipse provides SBT command to create Eclipse project files
 
 User powered basic example 
 ==========================
-**(*)** This is a _unofficial_ Lift user powered basic assembly example which means it is a work based on the 
+**(*)** This is a _unofficial_ Lift user powered basic Lift assembly which means it is a work based on the 
 sound foundation of Lift and done by a developer who uses Lift for development ;), sharing it with others.
