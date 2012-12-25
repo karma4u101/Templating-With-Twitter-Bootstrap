@@ -10,7 +10,10 @@ One of Lift's many great features is it's clean and flexible templating system. 
 to Lift and it's templates Lift comes by default, at this writing, bundled with [blueprint](http://blueprintcss.org/) as hooked 
 up CSS framework, here you will see blueprint replaced by another very popular and feature rich toolkit. 
 
-Improvements, contributions and suggestions are welcome!
+Contributions
+------
+Improvements, contributions and suggestions are welcome! Please see the [Contribution Document](https://github.com/karma4u101/Templating-With-Twitter-Bootstrap/blob/master/CONTRIBUTING.md). You can also leave a issue report or drop a question/suggestion to my priv. e-mail or on [Lift's mailing list](http://groups.google.com/group/liftweb/) 
+
 
 best regards Peter Petersson 
 
