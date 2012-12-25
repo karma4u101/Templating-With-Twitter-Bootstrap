@@ -1,11 +1,10 @@
 Templating With Twitter Bootstrap
 =================================
  
-This lift template example is using the [FoBo - Lift Front-End Toolkit Module](https://github.com/karma4u101/FoBo) with 
-the Bootstrap204 option enabled in boot.
+The intention of this project is to serve as a starter template project for Lift'ers that wish to get a quick start using Lift with 
+the front-end toolkit [Twitter Bootstrap](http://twitter.github.com/bootstrap/). 
 
-The intention of this example is to show some of Lifts templating features in conjunction with the front-end toolkit 
-[Twitter Bootstrap](http://twitter.github.com/bootstrap/). 
+The [Twitter Bootstrap](http://twitter.github.com/bootstrap/) toolkit is provided as a **Lift module** by the [FoBo - Lift Module](https://github.com/karma4u101/FoBo) making maintenance, upgrade and fall-back quick and easy (typically a one liner change in lift boot class of the BootstrapXXX option). 
   
 One of Lift's many great features is it's clean and flexible templating system. For convenience and to give some styling 
 to Lift and it's templates Lift comes by default, at this writing, bundled with [blueprint](http://blueprintcss.org/) as hooked 
@@ -20,7 +19,7 @@ Quick Start
 The only prerequisites for running this Lift example is that you have Git and Java installed and configured on the target computer.
 You don't need to use it but the project also includes a Eclipse plug-in for browsing and following/working with the code, see the Scala IDE section.   
 
-1) If you wish you can fetch the FoBo module and build it yourself but as of FoBo v0.5.0 it will be fetched for you.  
+1) If you wish you can fetch the FoBo module and build it yourself but as of FoBo >= v0.5.0 it will be fetched for you.  
 
 If you fetched the FoBo module follow the instructions at [FoBo - Lift Front-End Toolkit Module](https://github.com/karma4u101/FoBo). Basically this step involves a one liner command for local publish of the FoBo module.  
 
