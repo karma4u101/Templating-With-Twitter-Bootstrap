@@ -87,26 +87,11 @@
 
                 <!-- The side column stuff could be a include two -->
 				<div class="span3">
-					<div class="well sidebar-nav">
-						<ul class="nav nav-list">
-							<li class="nav-header">Sidebar</li>
-							<li><span data-lift="Menu.item?name=Home;linkToSelf=true;">
-<!-- 									<i class="icon-home icon"></i> -->
-									<span data-lift="Loc.i">Home</span>
-							</span></li>
-							<li>
-							 <span data-lift="Menu.item?name=Bootstrap;">
-							   <span data-lift="Loc.i">Documentation</span>
-							</span></li>
-							<li>
-							 <span data-lift="Menu.item?name=Countries;lift:Loc.i;">Countries</span>
-							</li>
-							<li>
-							 <span data-lift="Menu.item?name=ParamTest;lift:Loc.i;">ParamTest</span>
-							</li>
-
-						</ul>
+					
+					<div class="well" style="max-width: 340px; padding: 8px 0;">
+					  <span data-lift="FoBo.TBNavlist.builder?group=nl1"></span>
 					</div>
+					
 					<div class="lift:Msgs?showAll=true"></div>
 				</div>
 
