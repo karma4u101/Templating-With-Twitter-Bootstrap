@@ -20,7 +20,7 @@ best regards Peter Petersson
 Quick Start
 -----------
 The only prerequisites for running this Lift example is that you have Git and Java installed and configured on the target computer.
-You don't need to use it but the project also includes a Eclipse plug-in for browsing and following/working with the code, see the Scala IDE section.   
+You don't need to use it but the project also includes Eclipse, IDEA and ENSIME plug-in for browsing and following/working with the code, see the [Scala IDE Support] section bellow.   
 
 1) If you wish you can fetch the FoBo module and build it yourself but as of FoBo >= v0.5.0 it will be fetched for you.  
 
@@ -45,8 +45,11 @@ There is also a sbt.bat for windows users.
 
 For demonstration purpose and easy setup this example uses a in memory database. 
 
-Scala IDE for Eclipse
----------------------
+Scala IDE Support 
+-----------------
+
+###Eclipse 
+
 Sbteclipse provides SBT command to create Eclipse project files
 
 1) Usage
@@ -59,6 +62,11 @@ Sbteclipse provides SBT command to create Eclipse project files
 	File ==> Import...
 	Select General ==> Existing Project into Workspace 
 	Use "Brows" to look up the project root ....
+
+###Others
+
+There is also support for IDEA and ENSIME ... 
+**Note:** Can someone with insite in how to use thouse modules please contribute a updat to this document.
 
 User powered basic example 
 ==========================
