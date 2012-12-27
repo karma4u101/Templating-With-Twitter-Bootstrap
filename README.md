@@ -11,7 +11,7 @@ to Lift and it's templates Lift comes by default, at this writing, bundled with 
 up CSS framework, here you will see blueprint replaced by another very popular and feature rich toolkit. 
 
 Contributions
-------
+-------------
 Improvements, contributions and suggestions are welcome! Please see the [Contribution Document](https://github.com/karma4u101/Templating-With-Twitter-Bootstrap/blob/master/CONTRIBUTING.md). You can also leave a issue report or drop a question/suggestion to my priv. e-mail or on [Lift's mailing list](http://groups.google.com/group/liftweb/) 
 
 
@@ -21,23 +21,23 @@ Quick Start
 -----------
 The only prerequisites for running this Lift example is that you have Git and Java installed and configured on the target computer.
 You don't need to use it but the project also includes Eclipse, IDEA and ENSIME plug-in for browsing and following/working with the code, see the [Scala IDE Support] section bellow.   
+ 
 
-1) If you wish you can fetch the FoBo module and build it yourself but as of FoBo >= v0.5.0 it will be fetched for you.  
-
-If you fetched the FoBo module follow the instructions at [FoBo - Lift Front-End Toolkit Module](https://github.com/karma4u101/FoBo). Basically this step involves a one liner command for local publish of the FoBo module.  
-
-2) Get the examples
+2) Clone this project
 
 	git clone git@github.com:karma4u101/Templating-With-Twitter-Bootstrap.git
 	cd Templating-With-Twitter-Bootstrap
 
 3) Update & Run Jetty
 
-There is also a sbt.bat for windows users.
+The following commands will update and fetch the projects dependancys then start the jetty server and load the lift application. 
+There is also a sbt.bat for windows users so if you are on a windows maskine just substitute the ./sbt command with sbt.bat.
 
 	./sbt update ~container:start
 
 4) Launch Your Browser
+
+Launch your favorite browser and type in the following address to bring up the application.
 	
 	http://localhost:8080/
 
