@@ -31,7 +31,7 @@ You don't need to use it but the project also includes Eclipse, IDEA and ENSIME 
 2) Update & Run Jetty
 
 The following commands will update and fetch the projects dependancys then start the jetty server and load the lift application. 
-There is also a sbt.bat for windows users so if you are on a windows maskine just substitute the ./sbt command with sbt.bat.
+There is also a sbt.bat for windows users so if you are on a windows machine just substitute the ./sbt command with sbt.bat.
 
 	./sbt update ~container:start
 
