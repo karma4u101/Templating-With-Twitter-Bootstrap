@@ -23,19 +23,19 @@ The only prerequisites for running this Lift example is that you have Git and Ja
 You don't need to use it but the project also includes Eclipse, IDEA and ENSIME plug-in for browsing and following/working with the code, see the [Scala IDE Support] section bellow.   
  
 
-2) Clone this project
+1) Clone this project
 
 	git clone git@github.com:karma4u101/Templating-With-Twitter-Bootstrap.git
 	cd Templating-With-Twitter-Bootstrap
 
-3) Update & Run Jetty
+2) Update & Run Jetty
 
 The following commands will update and fetch the projects dependancys then start the jetty server and load the lift application. 
 There is also a sbt.bat for windows users so if you are on a windows maskine just substitute the ./sbt command with sbt.bat.
 
 	./sbt update ~container:start
 
-4) Launch Your Browser
+3) Launch Your Browser
 
 Launch your favorite browser and type in the following address to bring up the application.
 	
