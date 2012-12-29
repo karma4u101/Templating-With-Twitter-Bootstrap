@@ -32,13 +32,13 @@ class Boot extends Loggable {
     LiftRules.addToPackages("code")
     
     //We skip the FoBo built in JQuery in favor for the FoBo included lift-jquery-module
-    //FoBo.InitParam.JQuery=FoBo.JQuery172  
+    FoBo.InitParam.JQuery=FoBo.JQuery182  
     FoBo.InitParam.ToolKit=FoBo.Bootstrap222
     FoBo.InitParam.ToolKit=FoBo.PrettifyJun2011
     FoBo.init()
     //Just to show you do not need to use the FoBo jquery
-    JQueryModule.InitParam.JQuery=JQueryModule.JQuery182
-    JQueryModule.init() 
+//    JQueryModule.InitParam.JQuery=JQueryModule.JQuery182
+//    JQueryModule.init() 
  
     /*un-comment and switch to db of your liking */
     MySchemaHelper.initSquerylRecordWithInMemoryDB
