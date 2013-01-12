@@ -17,7 +17,7 @@ import code.snippet._
 //import org.hoisted.lib._
 //import java.io._
 
-import net.liftmodules.{FoBo,JQueryModule}
+import net.liftmodules.{FoBo}
 
 /**
  * A class that's instantiated early and run.  It allows the application
@@ -25,20 +25,17 @@ import net.liftmodules.{FoBo,JQueryModule}
  */
 class Boot extends Loggable {
   def boot {
-
-//    RunHoisted(new File("/usr/local/proj/cms_site"),new File("/home/peter/test"))
     
     // where to search snippet
     LiftRules.addToPackages("code")
     
-    //We skip the FoBo built in JQuery in favor for the FoBo included lift-jquery-module
+    //The FoBo setup and init
     FoBo.InitParam.JQuery=FoBo.JQuery182  
     FoBo.InitParam.ToolKit=FoBo.Bootstrap222
+    FoBo.InitParam.ToolKit=FoBo.FontAwesome200TB222
     FoBo.InitParam.ToolKit=FoBo.PrettifyJun2011
     FoBo.init()
-    //Just to show you do not need to use the FoBo jquery
-//    JQueryModule.InitParam.JQuery=JQueryModule.JQuery182
-//    JQueryModule.init() 
+
  
     /*un-comment and switch to db of your liking */
     MySchemaHelper.initSquerylRecordWithInMemoryDB
@@ -48,7 +45,7 @@ class Boot extends Loggable {
     Props.mode match {
       case Props.RunModes.Development => {
         logger.info("RunMode is DEVELOPMENT")
-        /*OBS! do no use this in a production env*/
+        /*OBS! It may not be safe to use schemify in a production env*/
         if (Props.getBool("db.schemify", false)) {
           MySchemaHelper.dropAndCreateSchema
         }
@@ -107,6 +104,17 @@ object Paths {
   //import xml.NodeSeq
   import scala.xml._
   
+  /*
+   * This SiteMap uses FoBo specific LocInfo objects to build TB menues with dividers 
+   * (vertical/horizontal), headers (labels). You will find more information at [2]
+   * 
+   * If you are looking for examples on how to enable use of MetaMegaProtoUser AddUserMenusXXXX 
+   * methods (for example User.AddUserMenusAfter with authentication) Take a look at [1] and [2]
+   *  
+   * [1] https://github.com/karma4u101/FoBo/issues/22#issuecomment-11932972 or 
+   * [2] http://www.media4u101.se/fobo-lift-template-demo/libo#fobo-snippets   
+   */
+  
   //menu dividers
   val divider1   = Menu("divider1") / "divider1" 
   val divider2   = Menu("divider2") / "divider2"
@@ -121,8 +129,6 @@ object Paths {
   
   //nav headers
   val navHeader1 = Menu.i("NavHeader1") / "navHeader1"
-  
-
   
   val index      = Menu.i("Home") / "index"
   
@@ -145,6 +151,7 @@ object Paths {
   val l13        = Menu.i("Level 1.3") / "page13" 
   val l14        = Menu.i("Level 1.4") / "page14"
   val l15        = Menu.i("Level 1.5") / "page15" 
+  
   // more complex because this menu allows anything in the /bootstrap* path to be visible
   val tb222Doc   = Menu(Loc("Bootstrap", Link(List("bootstrap-2.2.2"), true, "/bootstrap-2.2.2/index"), S.loc("Bootstrap"  , Text("TB Documentation")),LocGroup("nl1") ))
   
@@ -160,9 +167,9 @@ object Paths {
   val nlHelp     = Menu.i("NLHelp") / "helpindex"
   
   def sitemap = SiteMap(
-      navHeader1 >> LocGroup("nl1") >> FoBo.TBLocInfo.NavHeader,
-      index >> LocGroup("topLeft","nl1"),
-      ddLabel1    >> LocGroup("topLeft") >> PlaceHolder submenus (
+      navHeader1    >> LocGroup("nl1") >> FoBo.TBLocInfo.NavHeader,
+      index         >> LocGroup("topLeft","nl1"),
+      ddLabel1      >> LocGroup("topLeft") >> PlaceHolder submenus (
         contriesM   >> LocGroup("nl1"),
         l0M         >> LocGroup("nl1"),
         divider1    >> FoBo.TBLocInfo.Divider,
@@ -172,13 +179,13 @@ object Paths {
       l1M,
       l2M,
       
-      ddLabel3 >> LocGroup("topRight") >> PlaceHolder submenus (
+      ddLabel3    >> LocGroup("topRight") >> PlaceHolder submenus (
         a1,
         a2,
         a3),
-      vdivider1  >> LocGroup("topRight") >> FoBo.TBLocInfo.DividerVertical,
+      vdivider1   >> LocGroup("topRight") >> FoBo.TBLocInfo.DividerVertical,
         
-      ddLabel2 >> LocGroup("topRight") >> PlaceHolder submenus (
+      ddLabel2    >> LocGroup("topRight") >> PlaceHolder submenus (
         uDDItem1,
         uDDItem2,
         uDDItem3,
@@ -197,7 +204,7 @@ object Paths {
       l122 >> Hidden >> LocGroup("bdd12"),
     
       l13 >> Hidden >> LocGroup("bdd1"),
-      l14  >> Hidden >> LocGroup("bdd1"),   
+      l14 >> Hidden >> LocGroup("bdd1"),   
       l15 >> Hidden >> LocGroup("bdd1")           
      )
 }

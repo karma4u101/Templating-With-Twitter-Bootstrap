@@ -21,9 +21,11 @@ Update log
 ----------
 
 **Latest Module Version:** 
+- **2013-01-12** -- 0.4.7-SNAPSHOT
 - **2012-12-29** -- 0.4.6-SNAPSHOT
 
 **Latest Updates:**
+- **2013-01-12** -- 0.4.7-SNAPSHOT Added build for Scala 2.10 and FoBo v0.7.11 with Font-Awesome enabled.
 - **2012-12-29** -- 0.4.6-SNAPSHOT updated build to dep. on FoBo v0.7.7 and using FoBo.JQuery182
 
 Quick Start
