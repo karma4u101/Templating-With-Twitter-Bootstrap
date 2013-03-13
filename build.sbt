@@ -7,7 +7,7 @@ version := "0.4.7-SNAPSHOT"
 
 crossScalaVersions := Seq("2.10.0", "2.9.2", "2.9.1-1", "2.9.1")
 
-scalaVersion := "2.10.0"
+scalaVersion := "2.9.2"
 
 seq(webSettings :_*)
 
@@ -27,14 +27,14 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= {
-  val liftVersion = "2.5-SNAPSHOT" // Put the current/latest lift version here
+  val liftVersion = "2.5-RC2" // Put the current/latest lift version here
   Seq(
     "net.liftweb"      %% "lift-webkit"          % liftVersion          % "compile" withSources(),
     "net.liftweb"      %% "lift-mapper"          % liftVersion          % "compile",
     "net.liftweb"      %% "lift-squeryl-record"  % liftVersion          % "compile",
     "net.liftweb"      %% "lift-wizard"          % liftVersion          % "compile",
     "net.liftweb"      %% "lift-testkit"         % liftVersion          % "compile",
-    "net.liftmodules"  %% "fobo"                 % (liftVersion+"-0.7.11-SNAPSHOT") withSources()
+    "net.liftmodules"  %% "fobo"                 % (liftVersion+"-0.9.3-SNAPSHOT") withSources()
     )
 }
 

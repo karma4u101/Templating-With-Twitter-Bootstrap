@@ -31,7 +31,7 @@ class Boot extends Loggable {
     
     //The FoBo setup and init
     FoBo.InitParam.JQuery=FoBo.JQuery182  
-    FoBo.InitParam.ToolKit=FoBo.Bootstrap222
+    FoBo.InitParam.ToolKit=FoBo.Bootstrap230
     FoBo.InitParam.ToolKit=FoBo.FontAwesome200TB222
     FoBo.InitParam.ToolKit=FoBo.PrettifyJun2011
     FoBo.init()
