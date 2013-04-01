@@ -34,9 +34,12 @@ libraryDependencies ++= {
     "net.liftweb"      %% "lift-squeryl-record"  % liftVersion          % "compile",
     "net.liftweb"      %% "lift-wizard"          % liftVersion          % "compile",
     "net.liftweb"      %% "lift-testkit"         % liftVersion          % "compile",
-    "net.liftmodules"  %% "fobo"                 % (liftVersion+"-0.9.3-SNAPSHOT") withSources()
+    "net.liftmodules"  %% "fobo_2.5"             % "0.9.4-SNAPSHOT" % "compile"  
     )
 }
+//"net.liftmodules"  %% "lift-jquery-module"   % (liftVersion+"-2.2")            % "compile", 
+//"net.liftmodules"  %% "fobo-twitter-bootstrap_2.5" % "0.2.0-SNAPSHOT" % "compile"  
+//"net.liftmodules"  %% "fobo"                 % (liftVersion+"-0.9.3-SNAPSHOT") withSources()
 
 // Customize any further dependencies as desired
 libraryDependencies ++= Seq(
