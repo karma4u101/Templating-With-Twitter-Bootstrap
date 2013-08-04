@@ -50,10 +50,8 @@ libraryDependencies ++= Seq(
 
 // Customize any further dependencies as desired
 libraryDependencies ++= Seq(
-  "com.jolbox"               % "bonecp"         % "0.7.1.RELEASE"    % "compile->default",
-  "javax.servlet"            % "servlet-api"    % "2.5"              % "provided->default",
-  "org.slf4j"                % "slf4j-log4j12"  % "1.6.1"            % "compile->default",
-  "com.h2database"           % "h2"             % "1.3.167"
+  "com.jolbox"               % "bonecp"         % "0.7.1.RELEASE"       % "compile->default",
+  "javax.servlet"            % "servlet-api"    % "2.5"                 % "provided->default",
+  "org.slf4j"                % "slf4j-log4j12"  % "1.7.5"               % "compile->default",
+  "com.h2database"           % "h2"             % "1.3.173"
 )
-
-
