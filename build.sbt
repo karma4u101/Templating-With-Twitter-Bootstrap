@@ -3,7 +3,7 @@ organization := "Lift"
 
 name := "Templating With Twitter Bootstrap"
 
-version := "0.4.7-SNAPSHOT"
+version := "0.4.8-SNAPSHOT"
 
 crossScalaVersions := Seq("2.10.2", "2.9.2", "2.9.1-1", "2.9.1")
 
@@ -37,6 +37,7 @@ libraryDependencies ++= {
     "net.liftmodules"  %% "fobo_2.5"             % "1.0" % "compile"  
     )
 }
+
 //"net.liftmodules"  %% "lift-jquery-module"   % (liftVersion+"-2.2")            % "compile", 
 //"net.liftmodules"  %% "fobo-twitter-bootstrap_2.5" % "0.2.0-SNAPSHOT" % "compile"  
 //"net.liftmodules"  %% "fobo"                 % (liftVersion+"-0.9.3-SNAPSHOT") withSources()
