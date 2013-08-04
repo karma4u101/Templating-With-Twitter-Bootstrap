@@ -41,9 +41,15 @@ libraryDependencies ++= {
 //"net.liftmodules"  %% "fobo-twitter-bootstrap_2.5" % "0.2.0-SNAPSHOT" % "compile"  
 //"net.liftmodules"  %% "fobo"                 % (liftVersion+"-0.9.3-SNAPSHOT") withSources()
 
+// Customise container dependencies
+libraryDependencies ++= Seq(
+  "org.eclipse.jetty"        % "jetty-webapp"   % "8.1.12.v20130726"    % "container,test",
+  // @workaround https://github.com/sbt/sbt/issues/499#issuecomment-8794028
+  "org.eclipse.jetty.orbit"  % "javax.servlet"  % "3.0.0.v201112011016" % "container,test" artifacts Artifact("javax.servlet", "jar", "jar")
+)
+
 // Customize any further dependencies as desired
 libraryDependencies ++= Seq(
-  "org.eclipse.jetty"        % "jetty-webapp"   % "8.0.3.v20111011"  % "container",
   "com.jolbox"               % "bonecp"         % "0.7.1.RELEASE"    % "compile->default",
   "javax.servlet"            % "servlet-api"    % "2.5"              % "provided->default",
   "org.slf4j"                % "slf4j-log4j12"  % "1.6.1"            % "compile->default",
