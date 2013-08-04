@@ -7,9 +7,13 @@ version := "0.4.8-SNAPSHOT"
 
 crossScalaVersions := Seq("2.10.2", "2.9.2", "2.9.1-1", "2.9.1")
 
+scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature")
+
 scalaVersion := "2.10.2"
 
 seq(webSettings :_*)
+
+port in container.Configuration := 8080
 
 // If using JRebel
 //scanDirectories in Compile := Nil
