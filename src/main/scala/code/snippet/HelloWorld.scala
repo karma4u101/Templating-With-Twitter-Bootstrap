@@ -1,5 +1,5 @@
-package code {
-package snippet {
+package code
+package snippet
 
 import _root_.scala.xml.{NodeSeq, Text}
 import _root_.net.liftweb.util._
@@ -19,7 +19,4 @@ class HelloWorld {
 
    def howdy = "#time *" #> date.toString
    */
-}
-
-}
 }

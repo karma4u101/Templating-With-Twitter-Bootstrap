@@ -1,5 +1,5 @@
-package code {
-package comet {
+package code
+package comet
 
 import java.text.DateFormat._
 import net.liftweb._
@@ -31,6 +31,3 @@ class CometMessage extends CometActor {
   }
 }
 case object Message
-
-}
-}
