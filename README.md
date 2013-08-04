@@ -74,10 +74,41 @@ Sbteclipse provides SBT command to create Eclipse project files
 	Select General ==> Existing Project into Workspace 
 	Use "Brows" to look up the project root ....
 
-###Others
+### IDEA
 
-There is also support for IDEA and ENSIME ... 
-**Note:** Can someone with insite in how to use thouse modules please contribute a updat to this document.
+sbt-idea provides a `gen-idea` command to SBT to generate IDEA project files
+
+1) Usage
+
+	project$ ./sbt
+	> gen-idea no-classifiers
+
+2) In Intellij / IDEA do:
+
+	File ==> Open...
+	Select project root directory
+
+For further information, see both the plugin docs on github and stackoverflow responses:
+
+	https://github.com/mpeltonen/sbt-idea
+	http://stackoverflow.com/questions/4250318/how-to-create-sbt-project-with-intellij-idea
+
+### ENSIME
+
+ensime-sbt-cmd provides an `ensime generate` command to generate a ensime project files
+
+1) Usage
+
+	project$ ./sbt
+	> ensime generate
+
+For Emacs users, see the ENSIME project:
+
+	https://github.com/aemoncannon/ensime
+
+For Sublime users, see sublime-ensime:
+
+	http://sublimescala.org/
 
 User powered basic example 
 ==========================
