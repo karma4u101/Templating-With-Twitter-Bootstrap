@@ -5,7 +5,7 @@ import net.liftweb._
 import http._
 import util._
 import common._
-import _root_.java.util.Date
+import java.util.Date
 
 /**
  * A factory for generating new instances of Date.  You can create

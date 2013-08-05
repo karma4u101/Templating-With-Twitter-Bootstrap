@@ -5,11 +5,14 @@ name := "Templating With Twitter Bootstrap"
 
 version := "0.4.8-SNAPSHOT"
 
-crossScalaVersions := Seq("2.10.2", "2.9.2", "2.9.1-1", "2.9.1")
+scalaVersion := "2.9.2"
 
-scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature")
+crossScalaVersions := Seq("2.10.0", "2.9.2", "2.9.1-1", "2.9.1")
 
-scalaVersion := "2.10.2"
+scalacOptions <<= scalaVersion map { v: String =>
+  val opts = "-deprecation" :: "-unchecked" :: Nil
+  if (v.startsWith("2.9.")) opts else opts ++ ("-feature" :: "-language:postfixOps" :: Nil)
+}
 
 seq(webSettings :_*)
 
@@ -38,7 +41,7 @@ libraryDependencies ++= {
     "net.liftweb"      %% "lift-squeryl-record"  % liftVersion          % "compile",
     "net.liftweb"      %% "lift-wizard"          % liftVersion          % "compile",
     "net.liftweb"      %% "lift-testkit"         % liftVersion          % "compile",
-    "net.liftmodules"  %% "fobo_2.5"             % "1.0" % "compile"  
+    "net.liftmodules"  %% "fobo_2.5"             % "1.0"                % "compile"  
     )
 }
 

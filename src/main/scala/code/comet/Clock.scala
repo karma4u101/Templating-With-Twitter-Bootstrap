@@ -5,7 +5,6 @@ import net.liftweb.util.Schedule
 import net.liftweb.util.Helpers._
 import net.liftweb.http.CometActor
 import net.liftweb.http.js.JsCmds.SetHtml
-import scala.language.postfixOps
 
 case object Tick
 
