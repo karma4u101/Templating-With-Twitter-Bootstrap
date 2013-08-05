@@ -1,6 +1,7 @@
-package code {
-package comet {
+package code
+package comet
 
+import java.text.DateFormat._
 import net.liftweb._
 import http._
 import SHtml._ 
@@ -18,18 +19,15 @@ class CometMessage extends CometActor {
                 
   //def render = bind("message" -> <span id="message">Whatever you feel like returning</span>)
   
-  def render = "#message *" replaceWith timeNow.toLocaleString() 
+  def render = "#message *" replaceWith (getDateTimeInstance format now) 
   
   Schedule.schedule(this, Message, 10000L)
                 
   override def lowPriority : PartialFunction[Any,Unit] = {
     case Message => {
-      partialUpdate(SetHtml("message", Text("updated: " + timeNow.toString)))
+      partialUpdate(SetHtml("message", Text("updated: " + now.toString)))
       Schedule.schedule(this, Message, 10000L)
     }
   }
 }
 case object Message
-
-}
-}
