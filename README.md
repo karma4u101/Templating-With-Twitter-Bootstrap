@@ -21,10 +21,12 @@ Update log
 ----------
 
 **Latest Module Version:** 
+- **2013-08-05** -- 0.4.8-SNAPSHOT
 - **2013-01-12** -- 0.4.7-SNAPSHOT
 - **2012-12-29** -- 0.4.6-SNAPSHOT
 
 **Latest Updates:**
+- **2013-08-05** -- 0.4.8-SNAPSHOT Updated sbt to 0.12.4, Lift 2.5.1 and Scala 2.10.2, amongst other plugin and dependencies updates.
 - **2013-01-12** -- 0.4.7-SNAPSHOT Added build for Scala 2.10 and FoBo v0.7.11 with Font-Awesome enabled.
 - **2012-12-29** -- 0.4.6-SNAPSHOT updated build to dep. on FoBo v0.7.7 and using FoBo.JQuery182
 
@@ -74,10 +76,41 @@ Sbteclipse provides SBT command to create Eclipse project files
 	Select General ==> Existing Project into Workspace 
 	Use "Brows" to look up the project root ....
 
-###Others
+### IDEA
 
-There is also support for IDEA and ENSIME ... 
-**Note:** Can someone with insite in how to use thouse modules please contribute a updat to this document.
+sbt-idea provides a `gen-idea` command to SBT to generate IDEA project files
+
+1) Usage
+
+	project$ ./sbt
+	> gen-idea no-classifiers
+
+2) In Intellij / IDEA do:
+
+	File ==> Open...
+	Select project root directory
+
+For further information, see both the plugin docs on github and stackoverflow responses:
+
+	https://github.com/mpeltonen/sbt-idea
+	http://stackoverflow.com/questions/4250318/how-to-create-sbt-project-with-intellij-idea
+
+### ENSIME
+
+ensime-sbt-cmd provides an `ensime generate` command to generate a ensime project files
+
+1) Usage
+
+	project$ ./sbt
+	> ensime generate
+
+For Emacs users, see the ENSIME project:
+
+	https://github.com/aemoncannon/ensime
+
+For Sublime users, see sublime-ensime:
+
+	http://sublimescala.org/
 
 User powered basic example 
 ==========================
