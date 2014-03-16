@@ -31,8 +31,8 @@ class Boot extends Loggable {
     
     //The FoBo setup and init
     FoBo.InitParam.JQuery=FoBo.JQuery182  
-    FoBo.InitParam.ToolKit=FoBo.Bootstrap231
-    FoBo.InitParam.ToolKit=FoBo.FontAwesome300
+    FoBo.InitParam.ToolKit=FoBo.Bootstrap232
+    FoBo.InitParam.ToolKit=FoBo.FontAwesome321
     FoBo.InitParam.ToolKit=FoBo.PrettifyJun2011
     FoBo.init()
 
@@ -104,8 +104,23 @@ object Paths {
   //import xml.NodeSeq
   import scala.xml._
   
+  def loggedIn = 
+  { () => 
+    {
+      this.isLoggedIn match {
+        case true => Empty
+        case false => {
+          //redirect and set notice message 
+          Full(S.redirectTo("/index", () => S.notice("", "You need to login to access this page!")))
+        }
+      }
+    }
+  }
+  
+  def isLoggedIn : Boolean = true;
+  
   /*
-   * This SiteMap uses FoBo specific LocInfo objects to build TB menues with dividers 
+   * This SiteMap uses FoBo specific LocInfo objects to build TB menu with dividers 
    * (vertical/horizontal), headers (labels). You will find more information at [2]
    * 
    * If you are looking for examples on how to enable use of MetaMegaProtoUser AddUserMenusXXXX 
