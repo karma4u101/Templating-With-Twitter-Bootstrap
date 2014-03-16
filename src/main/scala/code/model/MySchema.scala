@@ -53,7 +53,7 @@ object MySchemaHelper extends Loggable {
         MySchema.create //create schema as shown in printDdl
         DemoData.createDemoData //fill the db with some initial data
       } catch {
-        case e =>
+        case e: Throwable =>
           e.printStackTrace()
           throw e;
       }
